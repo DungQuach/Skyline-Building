@@ -7,14 +7,16 @@ Node::Node()
 	left = nullptr;
 	right = nullptr;
 	parent = nullptr;
+	max = -1;
 }
 
-Node::Node(int value)
+Node::Node(int value,int ceil)
 {
 	key = value;
 	left = nullptr;
 	right = nullptr;
 	parent = nullptr;
+	high = ceil;
 }
 color Node::getColor()
 {
